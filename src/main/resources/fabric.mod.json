@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "issuemod",
+  "version": "${version}",
+  "name": "issuemod",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/CyberSteve777/issuemod"
+  },
+  "license": "MIT",
+  "icon": "assets/issuemod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.test.issuemod.client.IssuemodClient"
+    ],
+    "main": [
+      "org.test.issuemod.Issuemod"
+    ]
+  },
+  "mixins": [
+    "issuemod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
